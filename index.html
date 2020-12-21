@@ -13,15 +13,29 @@
     <title>Kensei Yamada's Portfolio</title>
   </head>
   <body>
-    <div class="fixed-nav d-flex">
-        <h1 class="mr-auto mt-3 ml-3">Kensei Yamada</h1>
-        <ul class="list-unstyled d-inline-flex ml-auto mt-4 mr-3">
+    <div class="slide-menu d-md-none">
+        <ul class="h-nav-list">
             <li><a href="#profile">Profile</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
-            <!-- <li><a href="#works">Works</a></li> -->
+            <li><a href="#works">Works</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
+    </div>
+    <div class="fixed-nav d-flex">
+        <h1 class="main-header mt-4 ml-4 col-md-6 text-center p-0 text-md-left">Kensei Yamada</h1>
+        <div class="d-none d-md-block col-md-6">
+            <ul class="list-unstyled d-flex ml-auto mt-4 mr-3 justify-content-end">
+                <li class="mr-3"><a href="#profile">Profile</a></li>
+                <li class="mr-3"><a href="#about">About</a></li>
+                <li class="mr-3"><a href="#skills">Skills</a></li>
+                <!-- <li><a href="#works">Works</a></li> -->
+                <li><a href="#contact">Contact</a></li>
+            </ul>    
+        </div>
+        <div class="menu-btn d-md-none p-4">
+            <i class="fas fa-bars h1"></i>
+        </div>
     </div>
     <div id="top-of-site-pixel-anchor"></div>
     <header>
@@ -55,30 +69,31 @@
             </ul>
             <p class="h3 text-right">etc.</p>
         </div>
-        <div class="col-md-3 about-img"></div>
+        <div class="col-md-3 d-none d-sm-block about-img"></div>
     </div>
     <div id="skills">
         <h2 class="text-center mb-3">Skills</h2>
         <div class="row mx-4">
-            <div class="col-md-3 text-center">
+            <div class="col-md-3 col-sm-6 text-center mb-3">
                 <i class="fab fa-html5 skills-icon"></i>
                 <p class="h5">Formatting with HTML5</p>
             </div>
-            <div class="col-md-3 text-center">
+            <div class="col-md-3 col-sm-6 text-center mb-3">
                 <i class="fab fa-css3-alt skills-icon"></i>
                 <p class="h5">Styling with CSS3</p>
             </div>
-            <div class="col-md-3 text-center">
+            <div class="col-md-3 col-sm-6 text-center mb-3">
                 <i class="fab fa-bootstrap skills-icon"></i>
                 <p class="h5">Organizing with Bootstrap</p>
             </div>
-            <div class="col-md-3 text-center">
+            <div class="col-md-3 col-sm-6 text-center mb-3">
                 <i class="fab fa-js-square skills-icon"></i>
                 <p class="h5">Interactive Animations and Back-End Development with JavaScript</p>
             </div>
         </div>
     </div>
-    <div id="contact">
+    <!-- 只今開発中 -->
+    <!-- <div id="contact">
         <h2 class="text-center mb-3" style="color: #000a20;">Contact</h2>
             <div class="contact-form mx-5">
                 <form action="form-handler.php" id="contact-form" method="post">
@@ -90,7 +105,7 @@
                     <input type="submit" class="form-control submit" value="Send Message">
                 </form>
             </div>
-    </div>
+    </div> -->
 </div>
 
 
